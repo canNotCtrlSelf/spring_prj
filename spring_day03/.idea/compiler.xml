@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day03_05aop_anno" />
+        <module name="day03_02proxy" />
+        <module name="day03_04aop_xml_adviceType" />
+        <module name="day03_01account_transaction" />
+        <module name="day03_03aop_xml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day03_01account_transaction" target="1.8" />
+      <module name="day03_02proxy" target="1.8" />
+      <module name="day03_03aop_xml" target="1.8" />
+      <module name="day03_04aop_xml_adviceType" target="1.8" />
+      <module name="day03_05aop_anno" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

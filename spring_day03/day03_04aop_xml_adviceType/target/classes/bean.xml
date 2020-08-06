@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="accountService" class="com.cncs.service.impl.AccountServiceImpl"></bean>
+
+    <bean id="log" class="com.cncs.utils.Logger"></bean>
+
+    <!--配置AOP-->
+    <aop:config>
+        <!--配置切入点表达式-->
+        <aop:pointcut id="pt1" expression="execution(* com.cncs.service.impl.AccountServiceImpl.*(..))"/>
+        <aop:aspect id="logAdvice" ref="log">
+<!--            <aop:before method="beforePrintLog" pointcut-ref="pt1"></aop:before>-->
+<!--            <aop:after-throwing method="afterThrowingPrintLog" pointcut-ref="pt1"></aop:after-throwing>-->
+<!--            <aop:after-returning method="afterReturningPrintLog" pointcut-ref="pt1"></aop:after-returning>-->
+<!--            <aop:after method="afterPrintLog" pointcut-ref="pt1"></aop:after>-->
+            <aop:around method="aroundPrintLog" pointcut-ref="pt1"></aop:around>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

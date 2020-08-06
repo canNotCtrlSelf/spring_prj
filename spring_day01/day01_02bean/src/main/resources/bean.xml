@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 创建bean对象
+        方式一：通过默认构造方法创建
+        -->
+    <!--<bean id="accountServiceImpl" class="com.cncs.service.impl.AccountServiceImpl"></bean>-->
+
+    <!-- 方式二：通过普通工厂的方法创建 -->
+    <!--<bean id="instanceFactory" class="com.cncs.factory.InstanceFactory"></bean>-->
+    <!--<bean id="accountServiceImpl" factory-bean="instanceFactory" factory-method="getAccountService"></bean>-->
+
+    <!--方式三：通过普通工厂的静态方法创建-->
+    <bean id="accountServiceImpl" class="com.cncs.factory.StaticFactory" factory-method="getAccountService"></bean>
+</beans>

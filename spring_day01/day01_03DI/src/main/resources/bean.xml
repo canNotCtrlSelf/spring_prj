@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--依赖注入的三种方式：
+        方式一：使用构造函数注入-->
+    <!--<bean id="accountService" class="com.cncs.service.impl.AccountServiceImpl">-->
+    <!--<constructor-arg name="name" value="李思思"></constructor-arg>-->
+    <!--<constructor-arg name="age" value="19"></constructor-arg>-->
+    <!--<constructor-arg name="date" ref="nowTime"></constructor-arg>-->
+    <!--</bean>-->
+    <bean id="nowTime" class="java.util.Date"></bean>
+
+    <!--方式二：使用set方法注入-->
+    <bean id="accountService2" class="com.cncs.service.impl.AccountServiceImpl2">
+        <property name="name" value="张益达"></property>
+        <property name="age" value="24"></property>
+        <property name="date" ref="nowTime"></property>
+    </bean>
+
+    <bean id="accountService3" class="com.cncs.service.impl.AccountServiceImpl3">
+        <property name="myStrs">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>CCC</value>
+                <value>BBB</value>
+                <value>DDD</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>111</value>
+                <value>776</value>
+                <value>345</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="sss" value="111"></entry>
+                <entry key="aaa">
+                    <value>gggg</value>
+                </entry>
+
+            </map>
+        </property>
+        <property name="myProperties">
+            <props>
+                <prop key="fff">jjj</prop>
+                <prop key="lll">iii</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

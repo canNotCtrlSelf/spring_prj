@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day04_06account_declare_tx_anno" />
+        <module name="day04_08account_programming_tx" />
+        <module name="day04_05account_declare_tx_xml" />
+        <module name="day04_02account_aop_xml" />
+        <module name="day04_07account_declare_tx_pure_anno" />
+        <module name="day04_03account_tx_aop_anno" />
+        <module name="day04_01jdbcTemplate" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day04_01jdbcTemplate" target="1.8" />
+      <module name="day04_02account_aop_xml" target="1.8" />
+      <module name="day04_03account_tx_aop_anno" target="1.8" />
+      <module name="day04_04account_tx" target="1.8" />
+      <module name="day04_05account_declare_tx_xml" target="1.8" />
+      <module name="day04_06account_declare_tx_anno" target="1.8" />
+      <module name="day04_07account_declare_tx_pure_anno" target="1.8" />
+      <module name="day04_08account_programming_tx" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

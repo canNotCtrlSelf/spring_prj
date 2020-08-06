@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day02_01anno_IOC/day02_01anno_IOC.iml" filepath="$PROJECT_DIR$/day02_01anno_IOC/day02_01anno_IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_02xml_IOC/day02_02xml_IOC.iml" filepath="$PROJECT_DIR$/day02_02xml_IOC/day02_02xml_IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02_03account_anno_IOC/day02_03account_anno_IOC.iml" filepath="$PROJECT_DIR$/day02_03account_anno_IOC/day02_03account_anno_IOC.iml" />
+    </modules>
+  </component>
+</project>
